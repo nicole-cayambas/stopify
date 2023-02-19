@@ -7,6 +7,7 @@ const spotify = create({
   }
 });
 
+
 export const getAuth = () => spotify.get("/v1/me");
 export const getUserPlaylists = (user_id) =>
   spotify.get(`/v1/users/${user_id}/playlists`);
